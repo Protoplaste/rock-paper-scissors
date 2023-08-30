@@ -8,6 +8,12 @@ class CurbRockPaperScissorsClient
 
     request = Net::HTTP::Get.new(uri.path, {'Content-Type' => 'application/json'})
     response = http.request(request)
-    JSON.parse(response.body)
+    return local_throw unless response.kind_of? Net::HTTPSuccess
+
+
+  private
+
+  def self.local_throw
+    GameService::POSSIBLE_BETS.sample
   end
 end
