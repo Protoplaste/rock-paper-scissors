@@ -4,5 +4,8 @@ class GameController < ApplicationController
   end
 
   def throw
+    result = GameService.play(params[:player_bet])
+    flash.notice = result
+    redirect_to action: :new
   end
 end

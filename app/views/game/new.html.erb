@@ -3,3 +3,9 @@
   <%= f.select :player_bet, @possible_bets %>
   <%= f.submit "Throw" %>
 <% end %>
+
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
