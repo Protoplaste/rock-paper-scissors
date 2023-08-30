@@ -1,24 +1,10 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements
 
-Things you may want to cover:
+* Ruby version 3.2.0
 
-* Ruby version
+## Setup
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Run `bundle install` to install dependancies
+* Run `rails s` to start the server
+* In a browser go to localhost:3000
