@@ -1,0 +1,5 @@
+<%= form_with url: "/game/throw", method: :get do |f| %>
+  <%= f.label :player_bet, "Select your bet:" %>
+  <%= f.select :player_bet, @possible_bets %>
+  <%= f.submit "Throw" %>
+<% end %>
