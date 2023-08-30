@@ -1,0 +1,13 @@
+class CurbRockPaperScissorsClient
+  require 'net/http'
+
+  def self.get_server_throw
+    uri = URI("https://private-anon-1fcb87526c-curbrockpaperscissors.apiary-mock.com/rps-stage/throw")
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+
+    request = Net::HTTP::Get.new(uri.path, {'Content-Type' => 'application/json'})
+    response = http.request(request)
+    JSON.parse(response.body)
+  end
+end
