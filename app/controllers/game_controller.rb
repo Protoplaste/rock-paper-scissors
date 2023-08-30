@@ -1,6 +1,6 @@
 class GameController < ApplicationController
   def new
-    @possible_bets = ["Rock", "Paper", "Scissors"]
+    @possible_bets = GameService::POSSIBLE_BETS
   end
 
   def throw
