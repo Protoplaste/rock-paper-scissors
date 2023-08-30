@@ -7,4 +7,4 @@
 
 * Run `bundle install` to install dependancies
 * Run `rails s` to start the server
-* In a browser go to localhost:3000/game/new
+* In a browser go to localhost:3000
